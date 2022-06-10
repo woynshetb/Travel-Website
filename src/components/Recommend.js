@@ -67,7 +67,47 @@ export default function Recommend() {
 
   return (
     <RecommendSecton id="recommend">
-      <div className="title"></div>
+      <div className="title">
+        <h2>Recommend Destinations </h2>
+      </div>
+      <div className="packages">
+        <ul>
+          {packages.map((pkg, index) => {
+            return (
+              <li
+                className={active === index + 1 ? "active" : ""}
+                onClick={() => setActive(index + 1)}
+              >
+                {pkg}
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+
+      <div className="destinations">
+        {data.map((destination) => {
+          return (
+            <div className="destination">
+              <img src={destination.image} alt="Destination" />
+              <h3>{destination.title}</h3>
+              <p>{destination.subTitle}</p>
+              <div className="info">
+                <div className="services">
+                  <img src={info1} alt="" />
+                  <img src={info2} alt="" />
+                  <img src={info3} alt="" />
+                </div>
+                <h4>{destination.cost} ETB</h4>
+              </div>
+              <div className="distance">
+                <span>1000 Kms</span>
+                <span>{destination.duration}</span>
+              </div>
+            </div>
+          );
+        })}
+      </div>
     </RecommendSecton>
   );
 }
