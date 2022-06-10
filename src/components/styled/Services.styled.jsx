@@ -7,7 +7,7 @@ grid-template-columns:repeat(4,1fr) ;
 .service{
   display:flex ;
   flex-direction:column ;
-  gap:1 ;
+  gap:2 ;
   padding:2rem ;
   margin:1rem ;
   background-color:aliceblue ;
