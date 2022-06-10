@@ -33,7 +33,7 @@ export default function Services() {
     },
   ];
   return (
-    <ServiceSection>
+    <ServiceSection id="services">
       {data.map((service) => {
         return (
           <div className="service">

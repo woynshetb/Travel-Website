@@ -10,8 +10,10 @@ function App() {
   return (
     <>
       <ScrollToTop />
-      <NavBar />
-      <Hero />
+      <div id="home">
+        <NavBar />
+        <Hero />
+      </div>
       <Services />
       <Recommend />
       <Testmonials />

@@ -4,7 +4,7 @@ import avatarImage from "../assets/avatarImage.jpeg";
 
 export default function Testmonials() {
   return (
-    <TestmonialSection>
+    <TestmonialSection id="testimonials">
       <div className="title">
         <h2>Happy Customers</h2>
         <div className="testmonials">
