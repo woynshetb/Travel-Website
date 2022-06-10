@@ -88,4 +88,35 @@ height:100% ;
     
     
 }
+@media screen and (min-width :280px) and (max-width:980px){
+height: 25rem;
+.background{
+    img {
+        height:100% ;
+    }
+    
+}
+.content{
+    .title{
+        h1{
+         font-size:1rem ;
+        }
+        p{
+            font-size:0.8rem ;
+            padding:1rem ;
+        }
+    }
+    .search{
+      flex-direction  :column ;
+      padding:0.8rem ;
+      gap:0.8rem ;
+      .container{
+       padding : 0 0.8rem ;
+       input[type="date"]{
+           padding-left : 1rem ;
+       }
+      }
+    }
+}
+}
 `;
