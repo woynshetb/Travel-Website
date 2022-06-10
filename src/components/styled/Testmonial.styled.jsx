@@ -45,4 +45,19 @@ margin:5rem 0 ;
     }
 }
 }
+
+@media screen and (min-width: 280px) and (max-width: 768px) {
+    .testmonials {
+      flex-direction: column;
+      margin: 0;
+      .testmonial {
+        justify-content: center;
+        .info {
+          flex-direction: column;
+          justify-content: center;
+        }
+      }
+    }
+  }
+
 `;
